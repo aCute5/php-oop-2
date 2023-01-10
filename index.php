@@ -8,9 +8,15 @@
 // BONUS:
 // Alcuni prodotti (es. antipulci) avranno la caratteristica che saranno disponibili solo in un periodo particolare (es. da
 // maggio ad agosto). -->
-include __DIR__ . '/user.php';
-include __DIR__ . '/registered.php';
-include __DIR__ . '/notreistered.php';
-include __DIR__ . '/products.php';
+include_once __DIR__ . '/user.php';
+include_once __DIR__ . '/registered.php';
+include_once __DIR__ . '/notregistered.php';
+
+include_once __DIR__ . '/products.php';
+$pippo = new Registered("Dario", "Costantini", "dariocostantini35@yahoo.it");
+$discount = $pippo->getDiscount();
+var_dump($pippo);
+$cuccia = new Product();
+$cuccia->setPrice(100, $discount);
 
 ?>

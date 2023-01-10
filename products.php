@@ -1,5 +1,4 @@
 <?
-include __DIR__ . '/registered.php';
 
 
 class Product
@@ -8,9 +7,9 @@ class Product
     public $name;
     public $type;
 
-    public function setPrice($price)
+    public function setPrice($price, $discount)
     {
-        $this->price -= $price - ($price / 100) * $discount;
+        $this->price = $price - ($price / 100) * $discount;
     }
 }
 ?>

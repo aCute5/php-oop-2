@@ -8,8 +8,14 @@ class Registered extends User
         $this->discount = 20;
         return $this;
     }
-}
 
-$registered->setDiscount(20);
+    /**
+     * Get the value of discount
+     */
+    public function getDiscount()
+    {
+        return $this->discount;
+    }
+}
 
 ?>

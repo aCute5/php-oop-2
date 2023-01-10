@@ -10,6 +10,12 @@ class Notregistered extends User
         $this->discount = 0;
         return $this;
     }
-}
 
-$registered->setDiscount(0);
+    /**
+     * Get the value of discount
+     */
+    public function getDiscount()
+    {
+        return $this->discount;
+    }
+}
