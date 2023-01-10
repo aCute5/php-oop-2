@@ -6,6 +6,7 @@ class Product
 {
     public $price;
     public $name;
+    public $type;
 
     public function setPrice($price)
     {
