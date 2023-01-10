@@ -14,6 +14,7 @@ class Registered extends User
      */
     public function getDiscount()
     {
+        $this->discount = 20;
         return $this->discount;
     }
 }

@@ -15,7 +15,9 @@ include_once __DIR__ . '/notregistered.php';
 include_once __DIR__ . '/products.php';
 $pippo = new Registered("Dario", "Costantini", "dariocostantini35@yahoo.it");
 $discount = $pippo->getDiscount();
+echo "<pre>";
 var_dump($pippo);
+echo "</pre>";
 $cuccia = new Product();
 $cuccia->setPrice(100, $discount);
 
